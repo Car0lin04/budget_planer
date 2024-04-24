@@ -5,11 +5,8 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
 class HomeViewModel : ViewModel() {
-    private val _navigateToActivity = MutableLiveData<Boolean>()
-    val navigateToActivity: LiveData<Boolean>
-        get() = _navigateToActivity
-
-    fun onImageButtonClicked() {
-        _navigateToActivity.value = true
+    private val _text = MutableLiveData<String>().apply {
+        value = "This is home Fragment"
     }
+    val text: LiveData<String> = _text
 }

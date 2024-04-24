@@ -18,6 +18,7 @@ import com.example.budgetplaner_30.databinding.ActivityMainBinding
 import com.google.android.material.button.MaterialButton
 
 
+
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding

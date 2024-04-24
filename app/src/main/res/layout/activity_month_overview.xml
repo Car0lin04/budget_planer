@@ -179,5 +179,6 @@
         android:visibility="visible"
         app:srcCompat="@drawable/wave_lila"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="622dp" />
+        tools:layout_editor_absoluteY="622dp"
+        tools:ignore="MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>
