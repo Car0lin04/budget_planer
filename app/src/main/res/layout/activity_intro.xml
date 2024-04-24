@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IntroActivity">
+
+    <ImageView
+        android:id="@+id/intro_background"
+        android:layout_width="match_parent"
+        android:layout_height="460dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/intro_background" />
+
+
+    <ImageView
+        android:id="@+id/intro_image"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        app:layout_constraintBottom_toBottomOf="@id/intro_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/intro_image" />
+
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/intro_image"
+        android:fontFamily="@font/alata"
+        android:text="SPAR FUCHS"
+        android:textColor="@color/white"
+        android:textSize="43dp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="60sp"
+        app:layout_constraintBottom_toTopOf="@id/intro_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/intro_image"
+        app:layout_constraintVertical_bias="0.77"/>
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/alata"
+        android:text="Wilkommen"
+        android:textColor="@color/black"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:layout_marginTop="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/intro_image" />
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:fontFamily="@font/alata"
+        android:gravity="center"
+        android:text="Lerne deine Finanzen auf einem leichten Weg zu planen"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/text2"
+        app:layout_constraintStart_toStartOf="@id/text2"
+        app:layout_constraintTop_toBottomOf="@id/text2" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/intro_btn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/intro_button_arrow"
+        android:background="@color/white"
+        android:layout_below="@id/text3"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text3"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

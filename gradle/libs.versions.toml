@@ -17,6 +17,7 @@ firebaseAuth = "22.3.1"
 preference = "1.2.1"
 legacySupportV4 = "1.0.0"
 fragmentKtx = "1.6.2"
+databindingRuntime = "8.3.2"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -35,6 +36,7 @@ firebase-auth = { group = "com.google.firebase", name = "firebase-auth", version
 androidx-preference = { group = "androidx.preference", name = "preference", version.ref = "preference" }
 androidx-legacy-support-v4 = { group = "androidx.legacy", name = "legacy-support-v4", version.ref = "legacySupportV4" }
 androidx-fragment-ktx = { group = "androidx.fragment", name = "fragment-ktx", version.ref = "fragmentKtx" }
+androidx-databinding-runtime = { group = "androidx.databinding", name = "databinding-runtime", version.ref = "databindingRuntime" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:backgroundTint="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="413dp"
+                    android:layout_height="680dp"
+                    app:srcCompat="@drawable/intro_wave_top"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="3dp"
+                    tools:layout_editor_absoluteY="-207dp" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="145dp"
+                    android:layout_height="160dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.501"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteY="105dp"
+                    tools:srcCompat="@drawable/example_profile" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/alata"
+                    android:text="Leon Rahmer"
+                    android:textColor="@color/black"
+                    android:textSize="35sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView3"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/alata"
+                    android:text="leonrahmer@gmail.com"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="@+id/textView"
+                    app:layout_constraintHorizontal_bias="0.492"
+                    app:layout_constraintStart_toStartOf="@+id/textView"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteY="319dp" />
+
+                <LinearLayout
+                    android:layout_width="416dp"
+                    android:layout_height="461dp"
+                    android:layout_marginTop="12dp"
+                    android:orientation="vertical"
+                    app:layout_constraintTop_toBottomOf="@+id/textView2"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="0dp">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/button1"
+                        style="@android:style/Widget.Button"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginEnd="32dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/light_blue"
+                        android:drawableStart="@drawable/baseline_settings_24"
+                        android:drawablePadding="20dp"
+                        android:fontFamily="@font/alata"
+                        android:paddingStart="20dp"
+                        android:text="Account Settings"
+                        android:textAlignment="viewStart"
+                        android:textSize="23sp"
+                        android:textStyle="bold" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/button2"
+                        style="@android:style/Widget.Button"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginEnd="32dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/light_blue"
+                        android:drawableStart="@drawable/baseline_person_24"
+                        android:drawablePadding="20dp"
+                        android:fontFamily="@font/alata"
+                        android:paddingStart="20dp"
+                        android:text="Personal Information"
+                        android:textAlignment="viewStart"
+                        android:textSize="23sp"
+                        android:textStyle="bold" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/button3"
+                        style="@android:style/Widget.Button"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginEnd="32dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/light_blue"
+                        android:drawableStart="@drawable/baseline_notifications_24"
+                        android:drawablePadding="20dp"
+                        android:fontFamily="@font/alata"
+                        android:paddingStart="20dp"
+                        android:text="Notifications"
+                        android:textAlignment="viewStart"
+                        android:textSize="23sp"
+                        android:textStyle="bold" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/button4"
+                        style="@android:style/Widget.Button"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginEnd="32dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/light_blue"
+                        android:drawableStart="@drawable/baseline_arrow_back_24"
+                        android:drawablePadding="20dp"
+                        android:fontFamily="@font/alata"
+                        android:paddingStart="20dp"
+                        android:text="Back to Menu"
+                        android:textAlignment="viewStart"
+                        android:textSize="23sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

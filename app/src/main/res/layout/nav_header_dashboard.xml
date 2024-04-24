@@ -14,22 +14,26 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="107dp"
+        android:layout_height="84dp"
         android:contentDescription="@string/nav_header_desc"
-        android:paddingTop="@dimen/nav_header_vertical_spacing"
-        app:srcCompat="@drawable/baseline_account_circle_24" />
+        android:paddingTop="15dp"
+        app:srcCompat="@drawable/example_profile" />
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingTop="@dimen/nav_header_vertical_spacing"
-        android:text="Budget Planer"
+        android:layout_height="40dp"
+        android:paddingTop="10dp"
+        android:text="Leon Rahmer"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/nav_header_subtitle" />
+        android:textColor="@color/black"
+        android:text="Email:  ... " />
 </LinearLayout>
