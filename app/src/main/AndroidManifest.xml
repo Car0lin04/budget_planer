@@ -34,6 +34,11 @@
 
         </activity>
         <activity
+            android:name=".MonthOverviewActivity"
+            android:exported="false"
+            />
+
+        <activity
             android:name=".SignUpActivity"
             android:exported="false" />
         <activity
