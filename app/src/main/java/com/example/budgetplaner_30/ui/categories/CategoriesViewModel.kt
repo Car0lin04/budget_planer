@@ -5,8 +5,10 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
 class CategoriesViewModel : ViewModel() {
-    private val _text = MutableLiveData<String>().apply {
-        value = "This is categories Fragment"
+    private val _categories = MutableLiveData<List<String>>()
+    val categories: LiveData<List<String>> = _categories
+
+    fun setCategories(newCategories: List<String>) {
+        _categories.value = newCategories
     }
-    val text: LiveData<String> = _text
 }
